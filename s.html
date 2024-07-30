@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.m{
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+.i{
+    height: 400px;
+    width: 400px;
+}
+.x{
+    height: 400px;
+    width: 0px;
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.m:hover{
+    .x{
+        width: 400px;
+        transition: all .5s;
+    }
+    h1{
+        visibility: visible;
+        color:white;
+        transition: all 2s;
+    }
+}
+h1{
+    color: white;
+    z-index: 3;
+    position: absolute;
+    visibility: hidden;
+    top: 160px;
+    right: 150px;
+}
+
+</style>
+<body>
+    <center>
+       <div class="m">
+        <img src="./list-1.jpg.webp" alt="" class="i">
+        <div class="x">
+            
+        </div>
+        <h1 >hellooo</h1>
+       </div>
+    </center>
+</body>
+</html>

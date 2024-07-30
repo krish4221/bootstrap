@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            height: 750px;
+            width:100%;
+            position: absolute;
+            z-index: 0;
+            background-image: url(./about.webp);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .top{
+        height: 30px;
+       width: 100%;
+       background-color: black;
+       }
+       .topcontant{
+        height: 625px;
+        width: 100%;
+        /* border: 2px solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        flex-direction: column;
+       }
+       .twrimg{
+    height: 700px;
+    width: 90%;
+}
+.bottom{
+    
+    
+    background-color: black;
+    color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+.ltrhvr{
+    color: white;
+
+}
+.ltrhvr:hover{
+    color: red;
+    cursor: pointer;
+}
+
+@media only screen and (min-width:320px) and (max-width:425px){
+    .navbar{
+        background-color: black;
+        color: white;
+        
+    }
+    .bottom{
+        /* height: 10px; */
+        display: block;
+        height: 1400px;
+       /* visibility: hidden; */
+    }
+    .twrimg{
+        width: 100%;
+    }
+    .emt4{
+        display: none;
+    }
+    .mid{
+        width: 100%;
+    }
+    .midrt{
+        width: 100%;
+    }
+    .midlft{
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+    }
+    .top{
+        height: 80px;
+    }
+    .list1{
+        width: 100%;
+    }
+    .list2{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+    }
+    .list3{
+        width: 100%;
+    }
+    .list4{
+        width: 100%;
+    }
+    .bottom{
+        height: 2300px;
+    }
+    .topsearch{
+        display: flex;
+          
+    }
+    .numcnt{
+        width: 100%;
+    }
+    .empt{
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width:426px) and (max-width:768px){
+    .top{
+        height: 60px;
+    }
+    
+    .navbar{
+        background-color: black;
+        color: white;
+        
+    }
+    .list1{
+        width: 32%;
+    }
+    .list2{
+        width: 48%;
+    }
+    .empt2{
+        display: none;
+    }
+    .emt4{
+        display: none;
+    }
+    .box{
+        width: 50%;
+    }
+    .list3{
+        width: 48%;
+    }
+    .list4{
+        width: 48%;
+    }
+    .bottom{
+        display: block;
+        height: 800px;
+    }
+    .topsearch{
+        display: block;
+        
+       
+    }
+    .numcnt{
+        width: 40%;
+    }
+    .pic{
+        height: 300px;
+    }
+    .but6{
+        height: 100px;
+    }
+   
+}
+
+@media only screen and (min-width:769px) and (max-width:2300px){
+    /* .empt{
+        display: none;
+    } */
+    .empt2{
+        display: none;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <main>
+
+        <div class="top  p-0">
+            <div class="container p-0">
+                <div class="row m-0 p-0">
+                    <div class="col-lg-8 d-flex col-md-12 p-0 ">
+                        <p style="color: red;">free call</p>
+                        <p style="color: white;">+1 234 854 8903</p>
+                    </div>
+                   
+                    <div class="col-lg-4 p-0" style="color: white;">
+                        <ul class="d-flex tex p-0" style="display: flex; justify-content: space-around;">
+                            <li>FACEBOOK</li>
+                            <li>TWITTER</li>
+                            <li>DRIBBBLE</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <div class=" m-0" style=" width: 45%;display: flex;">
+              <a class="navbar-brand align-items-center d-flex" href="#"><i class="fa-solid fa-compass fa-3x" style="color: #dd4646;"></i></a>
+              <a class="navbar-brand" href="#"><h3 style="color: white ;">directone</h3><h6 style="color: white;">Directory and lisitning</h6></a>
+            </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./bootstrap-project.html"><h5 style="color: white;">HOME</h5></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html"><h5 style="color: white;">ABOUT</h5></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><h5 style="color: white;">LISITNING</h5></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><h5 style="color: white;">BLOG</h5></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><h5 style="color: white;">CONTACT</h5></a>
+                  </li>
+                  
+                </ul>
+                <form class="d-flex">
+                  
+                  <button type="button" class="btn btn-danger">+ Add listing</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+          <div class="topcontant mb-5">
+            <div style="display: flex;gap: 10px;"><a href="./bootstrap-project.html" style="color: white;text-decoration: none;"><h5>HOME ></h5></a><H5>ABOUT US ></H5></div>
+            <h1 style="font-size: 80px;">About us</h1>
+        </div>
+
+        <div class="row d-flex p-0 mb-5" style="height: 700px;width: 100%;">
+            <div class="col-lg-6 col-md-6 p-0">
+              <img src="./OIP (5).jpeg" alt="" class="twrimg">
+            </div>
+            
+            <div class="col-lg-6 col-md-6 p-0 ">
+              <h1>Directone A Director</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum doloremque a, ullam quaerat iure, architecto veritatis
+                 deserunt debitis dolorum, dolor temporibus voluptatibus mollitia sequi repellat quo maiores. A corrupti omnis earum odit
+                 Voluptas laborum repudiandae veniam deserunt culpa 
+                  eos quibusdam?</p>
+                  <p class="mb-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio expedita libero reprehenderit quaerat hic necessitatibus
+                     corrupti, temporibus exercitationem ab perspiciatis facere impedit? Accusantium, molestias voluptatum. Asperiores nobis minima 
+                     commodi explicabo!</p>
+                     
+                    <div class="row" style="display: flex;gap: 10px;">
+                      <div class=" numcnt col-lg-3 col-sm-12 col-md-6" >
+                        <h1>50</h1>
+                        <p style="color: red;">YEARS OF EXPERIENCE</p>
+                      </div>
+                      <div class=" numcnt col-lg-3 col-sm-12 col-md-6">
+                        <H1>210K+</H1>
+                        <P style="color: red;">TOTAL LISTING</P>
+                      </div>
+                      <div class=" numcnt col-lg-3 col-sm-12 col-md-6" >
+                        <h1>450</h1>
+                        <p style="color: red;">COMPANY STAF</p>
+                      </div>
+                      <div class=" numcnt col-lg-3 col-sm-12 col-md-6" >
+                        <h1>100</h1>
+                        <p style="color: red;">HAPPY PEOPLE</p>
+                      </div>
+                    </div>
+
+
+            </div>
+          </div>
+
+
+          <div   class="bottom">
+
+            <div class="row mb-5" style="height: 500px;width: 80%;">
+            <div class="col-lg-3 m-0 col-md-12 col-sm-12" >
+              <h3 style="margin: 0;">Directone</h3>Directory and listing <br><br><br>
+              <p>A small River named dewon flows by their place and suplies with the necessary regularly</p>
+              <div style="display: flex;gap: 10px;">
+                <div class="icon4" style="display: flex;justify-content: center;align-items: center;"><i class="fa-brands fa-facebook fa-2x" style="color: white"></i></div>
+                <div class="icon4" style="display: flex;justify-content: center;align-items: center;"><i class="fa-brands fa-twitter fa-2x" style="color: white;"></i></div>
+                <div class="icon4" style="display: flex;justify-content: center;align-items: center;"><i class="fa-brands fa-instagram fa-2x" style="color: white;"></i></div>
+
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <h3>Explore</h3><br><br>
+              <p class="ltrhvr">> About us</p>
+              <p class="ltrhvr">> Account</p>
+              <p class="ltrhvr">> Listing</p>
+              <p class="ltrhvr">> Pricing package</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <h3>Quick links</h3><br><br>
+              <p class="ltrhvr">> Contact us</p>
+              <p class="ltrhvr">> terms and Condition</p>
+              <p class="ltrhvr">> Privacy</p>
+              <p class="ltrhvr">> feedback</p>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+              <h3>categories</h3><br><br>
+              <p class="ltrhvr">> Food & Drinks</p>
+              <p class="ltrhvr">> Hotels</p>
+              <p class="ltrhvr">> Shopping</p>
+              <p class="ltrhvr">> Beauty</p>
+              <p class="ltrhvr">> fitness</p>
+              <p class="ltrhvr">> bar and club</p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <h2>Have a question?</h2><br><br>
+              <div style="display: flex;gap: 10px;">
+                <i class="fa-solid fa-location-dot " style="color: #e52e41;"></i>
+                <p>203 fake st.mountain view,san francisco,California,USA</p>
+              </div>
+              <div style="display: flex; gap: 10px;">
+                <i class="fa-solid fa-phone " style="color: red"></i>
+                <p>+3 638 192 5620</p>
+              
+              </div>
+              <div style="display: flex;gap: 10px;">
+                <i class="fa-brands fa-telegram " style="color: red"></i>
+                 <p>info@yourdomine.com</p>
+              </div>
+            </div>
+          </div>
+          
+          </div>
+
+          <div class="row text-center " style="background-color: black;width: 100%;">
+            <p style="color: white;"> Copyright 2024 all rights | this template with me by Colorlib</p>
+           </div>
+
+
+
+    </main>
+</body>
+</html>
